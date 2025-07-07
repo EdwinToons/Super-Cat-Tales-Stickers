@@ -1,1 +1,92 @@
+/* Estilo para el cuerpo de la página */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #FFF1E8;
+  margin: 0; /* Elimina el margen predeterminado del body */
+  padding: 20px;
+}
 
+/* Estilo para los títulos h1 */
+h1 {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h3 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo para una clase de botón */
+.boton-principal {
+  display: inline-block; /* Permite ancho/alto y margen/padding */
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  text-decoration: none; /* Quita el subrayado si es un enlace */
+  font-weight: bold;
+}
+
+/* Estilo para una caja de contenido */
+#contenedor-principal {
+  width: 80%;
+  max-width: 960px; /* Ancho máximo para pantallas grandes */
+  margin: 30px auto; /* Centra el contenedor horizontalmente */
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.gallery-grid {
+    display: grid;
+    /* Esto crea una cuadrícula adaptable */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espacio entre las miniaturas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra la cuadrícula */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-item {
+    display: block; /* Para que el enlace ocupe todo el espacio */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el ratón */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px; /* Altura fija para todas las miniaturas */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    border-bottom: 1px solid #eee;
+}
+
+.item-title {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #f9f9f9;
+}
